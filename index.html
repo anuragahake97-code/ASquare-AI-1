@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ASquare AI</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
 <!-- Top Bar -->
 
 <div class="topbar">
@@ -11,3 +27,235 @@
     </button>
 
 </div>
+
+
+<!-- Hero Section -->
+
+<div class="hero">
+
+    <i class="fa-solid fa-shield-halved"></i>
+
+    <h1>ASquare AI</h1>
+
+    <p>
+        Think Smart. Stay Secure.
+    </p>
+
+    <small>
+        AI-Powered Cybersecurity Platform
+    </small>
+
+</div>
+
+
+<!-- Website Scanner -->
+
+<div class="card">
+
+    <h3>
+        🔍 Website Scanner
+    </h3>
+
+    <input
+    type="text"
+    id="urlInput"
+    placeholder="Enter Website URL">
+
+    <button onclick="checkURL()">
+        Analyze
+    </button>
+
+    <div id="result">
+
+    </div>
+
+</div>
+
+
+<!-- AI Explanation -->
+
+<div class="card">
+
+    <h3>
+        🧠 AI Explanation
+    </h3>
+
+    <p id="reason">
+
+        Waiting for scan...
+
+    </p>
+
+</div>
+
+
+<!-- Dashboard -->
+
+<div class="card">
+
+    <h3>
+        📊 Dashboard
+    </h3>
+
+    <p>
+        Total Scans :
+        <span id="total">
+            0
+        </span>
+    </p>
+
+    <br>
+
+    <p>
+        Safe Websites :
+        <span id="safe">
+            0
+        </span>
+    </p>
+
+    <br>
+
+    <p>
+        Phishing Websites :
+        <span id="phishing">
+            0
+        </span>
+    </p>
+
+</div>
+
+
+<!-- Screenshot Upload -->
+
+<div class="card">
+
+    <h3>
+        📷 Screenshot Upload
+    </h3>
+
+    <input
+    type="file"
+    id="imageUpload">
+
+    <div class="preview">
+
+        <img
+        id="previewImage">
+
+    </div>
+
+</div>
+
+
+<!-- QR Scanner -->
+
+<div class="card">
+
+    <h3>
+        📱 QR Scanner
+    </h3>
+
+    <button onclick="scanQR()">
+
+        Scan QR Code
+
+    </button>
+
+</div>
+
+
+<!-- History -->
+
+<div class="card">
+
+    <h3>
+        🕒 Scan History
+    </h3>
+
+    <ul id="historyList">
+
+    </ul>
+
+    <button onclick="clearHistory()">
+
+        Clear History
+
+    </button>
+
+</div>
+
+
+<!-- Export -->
+
+<div class="card">
+
+    <h3>
+        📄 Reports
+    </h3>
+
+    <button onclick="generatePDF()">
+
+        Download PDF
+
+    </button>
+
+    <button onclick="downloadCSV()">
+
+        Download CSV
+
+    </button>
+
+</div>
+
+
+<!-- Clock -->
+
+<div class="card">
+
+    <h3>
+        ⏰ Current Time
+    </h3>
+
+    <h2 id="clock">
+
+    </h2>
+
+</div>
+
+
+<!-- Footer -->
+
+<footer>
+
+    <h3>
+        ASquare AI
+    </h3>
+
+    <br>
+
+    <p>
+
+        Founded by
+
+        <br><br>
+
+        Akshara Tagde &
+        Anurag Ahake
+
+    </p>
+
+    <br>
+
+    <p>
+
+        © 2026 ASquare AI
+
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
