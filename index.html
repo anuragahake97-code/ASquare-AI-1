@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>ASquare AI</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<div class="phone">
+
+    <!-- Top Bar -->
+
+    <div class="topbar">
+
+        <h2>ASquare AI</h2>
+
+        <button id="themeBtn">
+
+            🌙
+
+        </button>
+
+    </div>
+
+
+    <!-- Hero -->
+
+    <div class="hero">
+
+        <i class="fa-solid fa-shield-halved"></i>
+
+        <h1>ASquare AI</h1>
+
+        <p>
+
+            Think Smart. Stay Secure.
+
+        </p>
+
+        <small>
+
+            Founders -
+            Akshara Tagde &
+            Anurag Ahake
+
+        </small>
+
+    </div>
+
+
+    <!-- URL Scanner -->
+
+    <div class="card">
+
+        <h3>
+
+            Website Scanner
+
+        </h3>
+
+        <input
+        type="text"
+        id="urlInput"
+        placeholder="Enter URL">
+
+        <button onclick="checkURL()">
+
+            Analyze
+
+        </button>
+
+        <div id="result">
+
+        </div>
+
+    </div>
+
+
+    <!-- AI Explanation -->
+
+    <div class="card">
+
+        <h3>
+
+            AI Explanation
+
+        </h3>
+
+        <p id="reason">
+
+            Waiting for scan...
+
+        </p>
+
+    </div>
+
+
+    <!-- Dashboard -->
+
+    <div class="card">
+
+        <h3>
+
+            Dashboard
+
+        </h3>
+
+        <p>
+
+            Total :
+            <span id="total">
+
+                0
+
+            </span>
+
+        </p>
+
+        <p>
+
+            Safe :
+            <span id="safe">
+
+                0
+
+            </span>
+
+        </p>
+
+        <p>
+
+            Phishing :
+            <span id="phishing">
+
+                0
+
+            </span>
+
+        </p>
+
+    </div>
+
+
+    <!-- Bottom Navigation -->
+
+    <div class="bottomNav">
+
+        <i class="fa-solid fa-house"></i>
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        <i class="fa-solid fa-clock-rotate-left"></i>
+
+        <i class="fa-solid fa-user"></i>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
